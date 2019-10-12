@@ -1,0 +1,78 @@
+//Part One
+
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Tell me your major</title>
+  <script>
+
+//take user's name and personalize the greeting
+    function userGreeting() {          
+
+      let major = prompt("What is your major?");          
+
+      let greeting = "Good luck on your " + major + " studies!";          
+
+      alert(greeting);
+    }
+  </script>
+</head>
+
+<body>                                      
+    <button type="button" onclick="userGreeting()">Let's do this</button>
+</body>
+</html>
+
+
+// Part Two
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+  <title>Personalized Scripture</title>
+    <script>
+
+//takes user's name and personalizes a versicle
+      function personalizeScripture() {          
+        
+        let userName = document.getElementById('nameInput').value;
+
+        let verse = "And this Anti-Christ, whose name was " + userName + 
+        ", (and the law could have no hold upon him) began to preach " +
+        "unto the people that there should be no Christ.";
+
+        document.getElementById('textOutput').innerHTML = verse;
+     }
+  </script>
+</head>
+
+<body>                             
+  
+  What is your first name? <input type="text" id="nameInput">    
+    <button type="button" onclick="personalizeScripture()">Click me</button>
+  <div id="textOutput"></div>
+</body>       
+</html>
+
+
+
+//Part Three (Template)
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Title</title>
+  <script>
+   
+  </script>
+</head>
+
+<body>                             
+  <input type="text">    
+  
+  <button></button>
+
+  <div></div>
+</body>       
+</html>
